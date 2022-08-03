@@ -1,4 +1,4 @@
 let nameUser;
-nameUser = prompt("What is your name?");
+nameUser = confirm("What is your name?");
 
-alert(nameUser);
+alert(typeof nameUser);
