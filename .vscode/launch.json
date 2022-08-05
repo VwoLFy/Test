@@ -8,8 +8,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "${workspaceFolder}\\index.html",
-            "webRoot": "${workspaceFolder}"
+            "url": "D:\\Прогр\\learn.javascript.ru\\index.html",
         }
     ]
 }
