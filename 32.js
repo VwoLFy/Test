@@ -9,17 +9,13 @@ function getMaxSubSum(arr) {
 
     let maxSum = arr[0];
     for (let start = 0; start < arr.length; start++) {
-        for (let end = start; end <= arr.length; end++) {
-            
-            let newArr = arr.slice(start, end)
-            let sum = 0;
-            for (let numb of newArr) {
-                sum += numb;
-            }
-            maxSum = Math.max(maxSum, sum);
+        let startSum = 0;
+        for (let end = start; end < arr.length; end++) {
+            startSum += arr[end];
+            maxSum = Math.max(maxSum, startSum);
         }
 
     }
    return maxSum;
 }
-alert( getMaxSubSum([-1, -2, -3]) );
+alert( getMaxSubSum([1, 2, 3]) );
